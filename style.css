@@ -96,6 +96,45 @@ button:hover {
   color: white;
 }
 
+/* Open hours */
+#openHours {
+  display: flex;
+  justify-content: center;
+  padding: 0.6rem 1rem;
+}
+
+.open-hours {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: white;
+  border-radius: 999px;
+  padding: 0.4rem 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  font-weight: 600;
+}
+
+.open-clock {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #333;
+}
+
+.open-status {
+  padding: 0.2rem 0.75rem;
+  border-radius: 999px;
+  color: white;
+}
+
+.open-status.is-open {
+  background-color: #4caf50;
+}
+
+.open-status.is-closed {
+  background-color: #ff6f61;
+}
+
 /* hero */
 
 .hero {
@@ -405,3 +444,4 @@ footer {
     align-items: flex-start;
   }
 }
+
