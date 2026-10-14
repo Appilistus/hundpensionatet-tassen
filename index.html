@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Chewy&family=Modak&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/css/regular/rounded.css">
+  <link rel="stylesheet" href="style.css">
   <title>Tassen</title>
 </head>
 <body>
@@ -22,42 +27,54 @@
   </header>
   <main>
     <section class="hero" id="hem">
-      <img src="" alt="hero image" class="hero-image">
-      <div class="hero-content">
-        <h2>Välkommen till Tassen</h2>
-        <p>Vi erbjuder professionell hundvård och träning.</p>
+      <img src="assets/hero-dog.jpg" alt="dog" class="hero-image">
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h2>Välkommen till Tassen</h2>
+          <p>Vi erbjuder professionell hundvård och träning.</p>
+          <button class="cta"><a href="#booking">Boka en tid</a></button>
+        </div>
       </div>
     </section>
 
     <section id="services">
       <h2>Våra tjänster</h2>
-      <div class="service-list">
+      <div class="services-list">
         <article class="service-card">
-          <img src="" alt="">
-          <h3>Hunddagis</h3>
-          <p>Heldag 320 kr</p>
+          <img src="assets/green.jpg" alt="Hunddagis"class="service-image img-green">
+          <div class="service-info">
+            <h3>Hunddagis</h3>
+            <p class="service-price">Heldag 320 kr</p>
+            <p class="service-price">Halvdag 190 kr</p>
+          </div>
         </article>
         <article class="service-card">
-          <img src="" alt="">
-          <h3>Pensionat per natt</h3>
-          <p>450 kr</p>
+          <img src="assets/pink.jpg" alt="Pensionat" class="service-image img-pink">
+          <div class="service-info">
+            <h3>Pensionat per natt</h3>
+            <p class="service-price">450 kr</p>
+          </div>
         </article>
         <article class="service-card">
-          <img src="" alt="">
-          <h3>Klippkort 10 dagar</h3>
-          <p>2800 kr</p>
+          <img src="assets/yellow.jpg" alt="Klippkort" class="service-image img-yellow">
+          <div class="service-info">
+            <h3>Klippkort 10 dagar</h3>
+            <p class="service-price">2800 kr</p>
+          </div>
         </article>
         <article class="service-card">
-          <img src="" alt="">
-          <h3>Hämtning &amp; Lämning</h3>
-          <p>150 kr</p>
+          <img src="assets/orange.jpg" alt="Hämtning och lämning" class="service-image img-orange">
+          <div class="service-info">
+            <h3>Hämtning &amp; Lämning</h3>
+            <p class="service-price">150 kr</p>
+            </div>
         </article>
       </div>
 
     </section>
     <section id="about">
       <h2>Om oss</h2>
-      <img src="" alt="">
+      <img src="assets/us.jpeg" alt="Om oss" class="about-image">
       <p>Tassen är en ledande hundvårds- och träningsanläggning med över 10 års erfarenhet.</p>
       <p>Nina, hundskötare · Pelle, hundskötare och ägare</p>
     </section>
