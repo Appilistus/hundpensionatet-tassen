@@ -17,16 +17,102 @@
         <li><a href="#about">Om oss</a></li>
         <li><a href="#contact">Kontakt</a></li>
       </ul>
+      <button class="cta"><a href="#booking">Boka nu</a></button>
     </nav>
   </header>
   <main>
-    <section class="hero" id="hem"></section>
-    <section id="services"></section>
-    <section id="about"></section>
-    <section id="contact"></section>
-    <section id="booking"></section>
+    <section class="hero" id="hem">
+      <img src="" alt="hero image" class="hero-image">
+      <div class="hero-content">
+        <h2>Välkommen till Tassen</h2>
+        <p>Vi erbjuder professionell hundvård och träning.</p>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Våra tjänster</h2>
+      <div class="service-list">
+        <article class="service-card">
+          <img src="" alt="">
+          <h3>Hunddagis</h3>
+          <p>Heldag 320 kr</p>
+        </article>
+        <article class="service-card">
+          <img src="" alt="">
+          <h3>Pensionat per natt</h3>
+          <p>450 kr</p>
+        </article>
+        <article class="service-card">
+          <img src="" alt="">
+          <h3>Klippkort 10 dagar</h3>
+          <p>2800 kr</p>
+        </article>
+        <article class="service-card">
+          <img src="" alt="">
+          <h3>Hämtning &amp; Lämning</h3>
+          <p>150 kr</p>
+        </article>
+      </div>
+
+    </section>
+    <section id="about">
+      <h2>Om oss</h2>
+      <img src="" alt="">
+      <p>Tassen är en ledande hundvårds- och träningsanläggning med över 10 års erfarenhet.</p>
+      <p>Nina, hundskötare · Pelle, hundskötare och ägare</p>
+    </section>
+    <section id="contact">
+      <div class="contact-details">
+        <div>
+          <h3>Öppettider</h3>
+          <p>Måndag - Fredag: 08:00 - 18:00</p>
+          <p>Lördag: 09:00 - 14:00</p>
+          <p>Söndag: Stängt</p>
+        </div>
+        <div>
+          <h3>Adress</h3>
+          <p>Hundvägen 123, 123 45 Hundstad</p>
+        </div>
+        <div>
+          <h3>Telefon</h3>
+          <p><a href="tel:+46123456789">+46 123 456 789</a></p>
+        </div>
+        <div>
+          <h3>E-post</h3>
+          <p><a href="mailto:hej@tassen.se">hej@tassen.se</a></p>
+        </div>
+      </div>
+
+    </section>
+    <section id="booking">
+      <h2>Boka en tid</h2>
+      <form>
+        <label for="name">Namn:</label>
+        <input type="text" id="name" name="name" placeholder="Ditt namn" required>
+        <label for="email">E-post:</label>
+        <input type="email" id="email" name="email" placeholder="Din e-post" required>
+        <label for="phone">Telefon:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Ditt telefonnummer" required>
+        <label for="service">Välj tjänst:</label>
+        <select id="service" name="service" required>
+          <option value="">--Välj en tjänst--</option>
+          <option value="trimning">Hundtrimning</option>
+          <option value="traning">Hundträning</option>
+          <option value="dagis">Dagis för hundar</option>
+        </select>
+        <label for="date">Välj datum:</label>
+        <input type="date" id="date" name="date" required>
+        <button type="submit">Boka nu</button>
+      </form>
+    </section>
   </main>
   <footer>
+    <div class="footer-info">
+      <p><i class="fi fi-rr-marker"></i> Hundvägen 123, 123 45 Hundstad</p>
+      <p><i class="fi fi-rr-phone-call"></i> <a href="tel:+46123456789">+46 123 456 789</a></p>
+      <p><i class="fi fi-rr-envelope"></i> <a href="mailto:hej@tassen.se">hej@tassen.se</a></p>
+      <p><i class="fi fi-rr-clock"></i> Mån–Fre 08:00–18:00, Lör 09:00–14:00</p>
+    </div>
     <p class="footer-copy">&copy; 2026 Tassen. Alla rättigheter förbehållna.</p>
   </footer>
 </body>
