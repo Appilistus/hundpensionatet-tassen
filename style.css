@@ -91,3 +91,129 @@ button:hover {
   background-color: #e85a4d;
   transform: translateY(-2px);
 }
+
+/* hero */
+
+.hero {
+  position: relative;
+  height: 70vh;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* service */
+
+#services {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* about */
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 40px;
+}
+
+/* contact */
+
+#contact {
+  padding: 60px 20px;
+}
+
+/* booking */
+
+#booking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+#booking form {
+  max-width: 480px;
+  margin-top: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+  padding: 40px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+form label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 12px;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid #ddd;
+  padding: 14px 16px;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: #fafafa;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #ff6f61;
+  box-shadow: 0 0 0 3px rgba(255, 111, 97, 0.15);
+  background-color: white;
+}
+
+form button {
+  margin-top: 25px;
+  padding: 14px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 50px;
+}
+
+form button:hover {
+  background-color: #e85a4d;
+}
+
+/* footer */
+
+footer {
+  background-color: #ff6f61;
+  color: white;
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+
+/* media queries */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
