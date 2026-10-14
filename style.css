@@ -226,6 +226,59 @@ button:hover {
   padding: 60px 20px;
 }
 
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-label {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #ff6f61;
+  margin-bottom: 10px;
+}
+
+.contact-text h2 {
+  font-size: 2.5rem;
+}
+
+.contact-intro {
+  margin: 20px 0 35px;
+  max-width: 420px;
+  color: #666;
+}
+
+.contact-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px 30px;
+}
+
+.contact-details h3 {
+  color: #ff6f61;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.contact-details p {
+  margin-bottom: 4px;
+}
+
+.contact-details a {
+  color: #333;
+  padding: 0;
+}
+
+.contact-details a:hover {
+  color: #ff6f61;
+}
+
 /* booking */
 
 #booking {
