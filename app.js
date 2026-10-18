@@ -163,4 +163,39 @@ fillServices();
 loadRequests();
 showRequests();
 
+// ===== Reviews =====
+
+const reviews = [
+  { text: "Rex älskar att komma hit, personalen är fantastisk!", author: "Anna A." },
+  { text: "Trygg och professionell hundvård. Rekommenderas varmt.", author: "Johan S." },
+  { text: "Bästa hunddagiset i Hundstad, utan tvekan.", author: "Maria L." },
+  { text: "Pelle och Nina är guld värda. Vår valp trivs så bra.", author: "Erik N." },
+  { text: "Alltid lika trevligt bemötande. Fem stjärnor!", author: "Sara K." }
+];
+
+const reviewBox = document.getElementById("reviewBox");
+const reviewButton = document.getElementById("reviewButton");
+
+let lastIndex = -1;
+
+function showRandomReview() {
+  let index = Math.floor(Math.random() * reviews.length);
+
+  while (index === lastIndex) {
+    index = Math.floor(Math.random() * reviews.length);
+  }
+
+  lastIndex = index;
+
+  const review = reviews[index];
+
+  reviewBox.innerHTML =
+    '<p class="review-text">"' + review.text + '"</p>' +
+    '<p class="review-author">– ' + review.author + '</p>';
+}
+
+reviewButton.onclick = showRandomReview;
+
+showRandomReview();
+
 
