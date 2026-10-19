@@ -47,7 +47,32 @@ contactForm.onsubmit = function (event) {
 
 // ===== Booking =====
 
-let requests = [];
+class BookingList {
+  constructor() {
+    this.bookings = [];
+
+    const saved = localStorage.getItem("tassen-requests");
+    if (saved !== null) {
+      this.bookings = JSON.parse(saved);
+    }
+  }
+
+  add(booking) {
+    this.bookings.push(booking);
+    this.save();
+  }
+
+  remove(index) {
+    this.bookings.splice(index, 1);
+    this.save();
+  }
+
+  save() {
+    localStorage.setItem("tassen-requests", JSON.stringify(this.bookings));
+  }
+}
+
+const bookinglist = new BookingList();
 
 const requestForm = document.getElementById("requestForm");
 const ownerNameInput = document.getElementById("ownerName");
@@ -78,21 +103,10 @@ function fillServices() {
   }
 }
 
-function loadRequests() {
-  const saved = localStorage.getItem("tassen-requests");
-  if (saved !== null) {
-    requests = JSON.parse(saved);
-  }
-}
-
-function saveRequests() {
-  localStorage.setItem("tassen-requests", JSON.stringify(requests));
-}
-
 function showRequests() {
   requestList.innerHTML = "";
 
-  if (requests.length === 0) {
+  if (bookinglist.bookings.length === 0) {
     const emptyRow = document.createElement("li");
     emptyRow.className = "request-empty";
     emptyRow.textContent = "Du har inga förfrågningar än.";
@@ -100,8 +114,8 @@ function showRequests() {
     return;
   }
 
-  for (let i = 0; i < requests.length; i++) {
-    const request = requests[i];
+  for (let i = 0; i < bookinglist.bookings.length; i++) {
+    const request = bookinglist.bookings[i];
 
     const row = document.createElement("li");
     row.className = "request-item";
@@ -117,8 +131,7 @@ function showRequests() {
 
     const place = i;
     cancelButton.onclick = function () {
-      requests.splice(place, 1);
-      saveRequests();
+      bookinglist.remove(place);
       showRequests();
     };
 
@@ -152,15 +165,13 @@ requestForm.onsubmit = function (event) {
     date: date
   };
 
-  requests.push(newRequest);
+  bookinglist.add(newRequest);
 
-  saveRequests();
   showRequests();
   requestForm.reset();
 };
 
 fillServices();
-loadRequests();
 showRequests();
 
 // ===== Reviews =====
