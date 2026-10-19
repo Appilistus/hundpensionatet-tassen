@@ -544,4 +544,13 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .contact-details {
+    grid-template-columns: 1fr;
+  }
 }

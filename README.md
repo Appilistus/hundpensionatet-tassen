@@ -5,10 +5,12 @@ A responsive one-page website for **Tassen**, a fictional dog daycare and traini
 ## Features
 
 - **Sticky navbar** with smooth-scroll navigation to each section
+- **Open hours banner** with a live clock and an open/closed status based on the current day and time
 - **Hero section** with a full-width image, dark overlay, and call-to-action button
 - **Live open/closed status** showing the current time and whether the business is open right now
 - **Services** displayed as responsive cards, each with a themed dog photo and price
 - **About** section
+- **Reviews** section that shows a random customer review, with a button to display another one (never repeating the same review twice in a row)
 - **Contact** section with a two-column layout: business details on the left, a contact form on the right
 - **Booking form** with owner name, phone, dog name, service, and date fields; requests are saved in the browser (localStorage) and can be cancelled from the list
 - **Customer reviews** with a button that shows a random review
